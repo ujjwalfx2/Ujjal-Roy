@@ -627,7 +627,8 @@ section {
 .contact-form .btn {
     border-radius: 0;
     color: #fff;
-    background-color: #3498db
+    background-color: #3498db;
+	border-radius: 25px;
 }
 .form-group.error .form-control {
     border-color: #a94442;
@@ -668,6 +669,15 @@ section {
     background-color: #dff0d8;
     border-color: #3c763d
 }
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
 /*
 	==================
 	[10. GMAPS]
