@@ -584,7 +584,37 @@
             <p class="lead">I’m eager to receive your feedback.</p>
             <p>Looking forward for new experience where I could learn, implement and practice new skills for qualitative and analytical framework in programs.</p>
           </div>
-          
+          <div class="col-sm-6 col-md-offset-1 wow zoomIn" data-wow-delay="0.5s" data-wow-duration="1s">
+            <!--form class="contact-form" id="contact-form" onsubmit="return validate()"><-->			
+			<!--form class="contact-form" id="contact-form" novalidate><-->
+			<form class="contact-form" id="contact-form" action="assets/php/mail.php" method="POST">  
+              <div class="form-group control-group">
+                <label class="control-label" for="contact-name">Name</label>
+                <div class="controls input-group">
+                  <span class="input-group-addon"><i class="fa fa-user-circle"></i></span>
+                  <input class="form-control input-lg" id="name" placeholder="Name" name="name" type="text"/>
+                </div>
+                <p class="help-block"></p>
+              </div>
+              <div class="form-group control-group">
+                <label class="control-label" for="contact-name">Email</label>
+                <div class="controls input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                  <input class="form-control input-lg" id="email" placeholder="Email Address" name="email" type="email"/>
+                </div>
+                <p class="help-block"></p>
+              </div>
+              <div class="form-group control-group">
+                <label class="control-label" for="contact-name">Message</label>
+                <div class="controls">
+                  <textarea class="form-control" id="message" placeholder="Message" name="email-message"></textarea>
+                </div>
+                <p class="help-block"></p>
+              </div>
+              <div id="error_message"></div>
+              <button class="btn btn-lg btn-block" id="btn-submit" type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
